@@ -42,9 +42,6 @@ export default function LandingPage() {
             <Link href="#testimonials" className="text-zinc-300 hover:text-white transition-colors">
               Reviews
             </Link>
-            <Link href="#pricing" className="text-zinc-300 hover:text-white transition-colors">
-              Pricing
-            </Link>
           </nav>
 
           <Button className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white border-0">
