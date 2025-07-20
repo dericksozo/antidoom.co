@@ -23,27 +23,14 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.10.0
-          run_install: false
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
-
       - name: Build step
-        run: pnpm run build
+        run: "pnpm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "antidoom"
-          entrypoint: "jsr:@deno/nextjs-start/v15"
+          entrypoint: "npx serve@latest out"
           root: "."
+          
+          
