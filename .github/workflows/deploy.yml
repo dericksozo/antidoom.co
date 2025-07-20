@@ -30,7 +30,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "antidoom"
-          entrypoint: "npm: npx serve@latest out"
+          entrypoint: "jsr:@deno/nextjs-start/v15"
           root: "."
           
           
