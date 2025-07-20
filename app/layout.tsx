@@ -4,7 +4,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'ANTIDOOM – Kill the Doom Scroll',
   description:
-    'Take back control of your time with ANTIDOOM, the Chrome extension that blocks distracting websites and helps you focus on what actually matters.'
+    'Take back control of your time with ANTIDOOM, the Chrome extension that blocks distracting websites and helps you focus on what actually matters.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
